@@ -1,9 +1,5 @@
 fetch("./data/data.json")
-  .then(response => {
-    if (response.ok) {
-      return response.json();
-    }
-  })
+  .then(res => res.json())
   .then(data => {
     data.Subsriptions.forEach(sub => {
       const subscriptions = document.createElement('a');
@@ -12,9 +8,9 @@ fetch("./data/data.json")
           <img src="${sub.image}" />
           <span>${sub.name}</span>
       `;
-      const container = document.querySelector('.side-bar .subs');
-      if (container) {
-        container.append(subscriptions);
+      const container1 = document.querySelector('.side-bar .subs');
+      if (container1) {
+        container1.append(subscriptions);
       }
     });
   })
