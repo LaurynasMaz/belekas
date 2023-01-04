@@ -3,7 +3,6 @@ fetch("./data/data.json")
     if (response.ok) {
       return response.json();
     }
-    throw new Error("Error fetching data.json");
   })
   .then(data => {
     data.Subsriptions.forEach(sub => {
@@ -19,6 +18,3 @@ fetch("./data/data.json")
       }
     });
   })
-  .catch(error => {
-    console.error(error);
-  });

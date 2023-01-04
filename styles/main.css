@@ -86,5 +86,6 @@ nav{
 }
 .subs img{
  width: 1.7rem;
- height: 1.7rem;;
+ height: 1.7rem;
+ border-radius: 50px;
 }
