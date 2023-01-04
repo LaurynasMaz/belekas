@@ -84,3 +84,7 @@ nav{
   cursor: pointer;
   border-radius: 10px;
 }
+.subs img{
+ width: 1.7rem;
+ height: 1.7rem;;
+}
