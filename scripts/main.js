@@ -11,15 +11,13 @@ fetch("./data/data.json")
           <div class="details">
             <div class="author">
               <img src="${video.author}" alt="" />
-            </div>
-            <div class="title">
             <h3>${video.title}</h3>
             </div>
             <div class="authorName">
-            <a>${video.name}</a>
-            </div>
-            <div class="additionalInfo">
-            <span>${video.info}</span>
+              <a>${video.name}</a>
+              <div class="additionalInfo">
+                <span>${video.info}</span>
+              </div>
             </div>
         </div>
       `;

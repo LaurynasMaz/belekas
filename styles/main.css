@@ -27,16 +27,18 @@ main {
   margin-right: 10px;
 }
 .details {
-display: grid;
-grid-template-columns: repeat(3, 0.5fr);
-grid-template-rows: repeat(3, 0.2fr);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 0.5fr);
 }
 .author{
-  grid-area: 1 / 1 / 1 / 1;
+grid-area: 1 / 1 / 2 / 4;
+display: flex;
+overflow: hidden;
+align-items: flex-end;
 }
-.title{
-  grid-area: 1 / 2 / 2 / 4;
-  overflow: hidden;
+.author img{
+  align-self: start;
 }
 .authorName{
   grid-area: 2 / 1 / 3 / 3;
